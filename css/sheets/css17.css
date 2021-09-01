@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+
+.rect{
+    width: 100px;
+    height: 100px;
+    border: solid 3px black;
+}
+
+.red{
+    background-color:  red;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.green{
+    background-color: green;
+}
+.container{
+    border: solid 3px black;
+    position: relative;
+    height: 300px;
+    width: 500px;
+    margin: auto;
+
+    bottom: 100px; /*position: relative 일 때 적용됨*/
+    right: 100px; /*position: relative 일 때 적용됨*/
+}
+/*position: absolute*/
+#div1{
+    position: absolute; /*절대적 위치*/
+    top: 0px;
+    left: 0px;
+
+    opacity: 1.0; /*투명도 1.0이 불투명한것 최대*/
+    /*포지션이 static이 아닌 요소는 z-index를 설정할 수 있다*/
+    z-index: -1; /*위로 올릴지 아래로 깔지 정함 일반 글자가 '0'*/
+}
+#div2{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+
+    z-index: -3;
+}
+#div3{
+    position: absolute;
+    top: 12.5px;
+    left: 12.5px;
+
+    z-index: -2;
+}
+
+/*position: */
+.tetris{
+    width: 300px;
+    height: 50px;
+    border: solid 3px black;
+
+    position: sticky; /*스크롤 내려오다 보면 위치가 fix되게 됨*/
+}
+
+.nav-bar{
+    position: fixed; /*스크롤 내려도 따라다니게된다*/
+    width: 100%;
+    height: 50px;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    color: white;
+    user-select: none; /*블록지정 안되게*/
+
+    z-index: 5;
+}
+.nav-bar > i:first-child{
+    margin-left: 40px;
+}
+
+.nav-bar > i{
+    position: relative;
+    top: 12px;
+    margin-right: 15px;
+}
+
+#block1{
+    top: 50px;
+    left: 100px;
+}
+
+#block2{
+    top: 100px;
+    left: 150px;
+}
+
+#block3{
+    top: 150px;
+    left: 50px;
+}

@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+.grid-container{
+    display: grid;
+
+    background-color: lightcoral;
+
+    /*첫번째는 100px 두번째는 150px 세번째는 200px 남은곳에 auto*/
+    grid-template-columns: 100px 150px 200px auto;
+    grid-template-rows: 100px 150px 200px auto;
+}
+
+.grid-container > *{
+    background-color: white;
+    font-size: 35px;
+    border: solid darkred 5px;
+}
+
+.grid-container2{
+    background-color: black;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px;
+
+    column-gap: 15px;
+    row-gap: 50px;
+
+    padding: 15px;
+}
+
+.grid-container2 > *{
+    background-color: white;
+    font-size: 35px;
+
+
+}

@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+
+.content{
+    border: solid 3px black;
+    padding: 15px;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.8em;
+}
+
+.content > img:first-of-type{
+    width: 300px;
+    float: right;
+    margin-left: 15px;
+}
+
+.content > img:nth-of-type(2){
+    width: 300px;
+    float: left;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.content > img + p::after { /*p태그가 끝나고나서 clear하는것*/
+    display: block; /*span으로 했을떄 안먹었기때문에 인라인요소를 블록요소로 바꾼것*/
+    clear: both;
+    content: "";
+}
+
+.container2{
+    font-size: 35px;
+}
+.container2 > div:first-child{
+    background-color: darkred;
+    color: white;
+    width: 100%;
+    float: left;
+    padding: 50px;
+}
+
+.container2 > div:nth-child(2){
+    background-color: darksalmon;
+    color: white;
+    width: 20%;
+    float: left;
+    padding: 50px;
+    height: 500px;
+}
+
+.container2 > div:nth-child(3){
+    background-color: darkslateblue;
+    float: left;
+    color: white;
+    padding: 50px;
+    height: 400px;
+    width: 80%;
+}
+
+.container2 > div:nth-child(4){
+    background-color: darkseagreen;
+    color: white;
+    float: left;
+    padding: 30px;
+    padding-left: 50px;
+    height: 100px;
+    width: 80%;
+}
+
+.container2::after{
+    display: block;
+    clear: both;
+    content: "";
+}

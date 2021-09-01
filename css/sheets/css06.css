@@ -1,0 +1,54 @@
+div{
+    border: solid 3px black;
+    font-size: 35px;
+}
+
+#div1{
+    margin: 50px 25px;
+}
+
+body{
+    border: solid 1px green;
+}
+
+#div2{
+    margin: 50px;
+}
+
+#div3{
+    width: 200px;
+    margin: auto;
+}
+
+.padding1{
+    padding: 50px;
+}
+.padding2{
+    padding: 100px;
+}
+
+#box1{
+    border: solid 15px black;
+    background-color: yellow;
+    width: 100px;
+    padding: 100px;
+    margin: 50px;
+}
+
+#content{
+    box-sizing: content-box; /* 기본값 */
+    background-color: red;
+    color: white;
+    border: 20px solid black;
+    padding: 50px;
+    width: 350px;
+}
+
+#border{
+    box-sizing: border-box;
+    background-color: darkslateblue;
+    color: white;
+    border: 20px solid lime;
+    padding: 10px;
+    width: 350px;
+}

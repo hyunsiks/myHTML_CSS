@@ -1,0 +1,45 @@
+.nav-bar{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    background-color: black;
+    color: white;
+    top: 0px;
+    left: 0px;
+
+    flex-direction: row;
+}
+
+.nav-bar > a{
+    background-color: gray;
+    margin: 10px;
+    padding: 5px;
+}
+
+.nav-bar > a:visited {
+    color: white;
+}
+
+/*all 이라는 것은 모든 타입 이라는 것*/
+@media screen and (max-width: 600px){ /*최대 크기 600까지 이 스타일을 적용해라*/
+    .nav-bar{
+        flex-direction: column;
+    }
+
+    .nav-bar{
+        background-color: red;
+    }
+}
+
+@media print{ /*인쇄를 할때 적용되는 페이지 모습*/
+    .nav-bar{
+        flex-direction: column;
+    }
+
+    .nav-bar{
+        background-color: darkturquoise;
+        color: black;
+        -webkit-print-color-adjust: exact;
+		print-color-adjust: exact;
+    }
+}

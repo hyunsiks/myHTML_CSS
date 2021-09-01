@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01_CSS.html</title>
+    <style>
+        div{
+            background-color: gray;
+            color: white;
+            font-weight: bold;
+            padding: 20px;  
+            border-radius: 80px; /*둥근 테두리 만들기*/
+            border : dashed 5px orange; /*테두리색과 모양*/
+        }
+
+        span{
+            text-decoration: dodgerblue wavy underline 2px; /*밑줄 물결모양*/
+            background-color: greenyellow;
+        }
+
+        /*p태그는 그 라인 전부 통으로 블록지정 되기 때문에 글 중간 지정이 힘듬*/
+        p{
+            box-shadow: 3px 5px 5px rgb(50, 66, 5);
+            border: double rgb(203, 231, 45) 10px;
+            padding: 20px;
+            text-shadow: 1px 1px 5px rgb(37, 33, 58);
+            font-style: inherit;
+            font-weight: bold;
+            color :rgb(233, 255, 38);
+            background-color: rgb(13, 13, 56);
+            border-radius: 80px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h3># CSS (Cascading Style Sheet)</h3>
+<ul>
+    <li>모든 HTML요소가 어떤 모습으로 보여야 할 지 정의해놓는 곳</li>
+    <li>스타일시트를 작성할 때는 CSS라는 언어를 사용한다</li>
+    <li>웹 브라우저는 스타일시트를 해석하여 해당 요소의 디자인을 결정한다</li>
+</ul>
+
+<!-- div : 아무것도 아닌 블록 요소를 하나 생성하는 태그 -->
+<!-- span : 아무것도 아닌 인라인 요소를 하나 생성하는 태그 -->
+<div>
+    대표 가상화폐 비트코인의 가격이 소폭 상승하며 3만3000달러 선을 유지하는 등 주요 가상화폐 
+    가격이 상승세를 보이고 있다. 암호화폐 정보 사이트 코인데스크에 따르면 미국 서부 시간으로 
+    23일 오후 3시(한국 시간 24일 오전 7시) 기준 비트코인의 가격은 24시간 전보다 2.69% 상승한 
+    코인당 3만3274.15달러로 집계됐다. <span>비트코인 가격은 전날 한때 3만달러대가 무너지며 2만9300달러 
+    선까지 내려갔다.</span> 올해 상승분을 모두 반납하고 연간 수익률이 마이너스(-)로 돌아섰으나 이후 
+    회복해 3만2000∼3만4000달러 대역을 오르내리고 있다. 비트코인의 이날 시가총액은 6235억8000만달러로 
+    집계됐다. CNBC는 비트코인 <p>가격이 회복된 이유가</p> 불분명하다면서 가상화폐들이 변동성이 심하다는 
+    점을 지적했다.
+</div>
+<p>
+    표 가상화폐 비트코인의 가격이 소폭 상승하며 3만3000달러 선을 
+    유지하는 등 주요 가상화폐 가격이 상승세를 보이고 있다. 암호화폐
+    정보 사이트 코인데스크에 따르면 미국 서부 시간으로 23일 오후 3시
+    (한국 시간 24일 오전 7시) 기준 비트코인의 가격은 24시간 전보다 
+    2.69% 상승한 코인당 3만3274.15달러로 집계됐다.
+</p>
+<span></span>
+
+</body>
+</html>

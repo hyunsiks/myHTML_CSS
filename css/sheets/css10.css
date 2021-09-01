@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Hi+Melody&family=Jua&family=Song+Myung&display=swap");
+
+div{
+    font-size: 40px;
+}
+
+#div1{
+  
+    font-family: 'Hi Melody', cursive;
+}
+#div2{
+    
+    font-family: 'Song Myung', serif;
+}
+#div3{
+
+    font-family: 'Jua', sans-serif;
+}

@@ -1,0 +1,50 @@
+div{
+    border: solid black 3px;
+    height: 300px;
+    font-size: 35px;
+    margin: auto;
+}
+/* 배경에 이미지 넣기 */
+div:first-child{
+    background-image: url('../../assets/image/pu.jpg');
+
+    background-repeat: no-repeat; /*하나만 넣겠다*/
+    background-repeat: repeat-y; /*세로로만 계속 넣기*/
+    background-repeat: repeat-x; /*가로로만 계속 넣기*/
+    /* background-size: contain;  그림이 다들어가도록
+       background-size: cover;  꽉찬 그림*/
+    background-size: 150px 150px; /*그림의 크기설정*/
+    background-position: right bottom; /*그림의 위치설정*/
+}
+div:nth-child(2){
+    background-image: url('../../assets/image/푸바오1.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+div:nth-child(3){
+    display: inline-block;
+    background-image: url('../../assets/image/푸바오3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-image: round;
+}
+div:nth-child(4){
+    background-image: url('../../assets/image/푸바오3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    border-radius: 80%;
+    text-align: center;
+    line-height: 8cm;
+    font-size: 40px;
+    font-weight: 900;
+    color: blanchedalmond;
+    -webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: black;
+    border-color:black;
+    border: double;
+}
+div:last-child{
+    background-image: url('../../assets/image/pu.jpg');
+    background-size: cover;
+}

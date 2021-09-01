@@ -1,0 +1,28 @@
+.material-icons{
+    color: red;
+}
+
+.material-icons-sharp{
+    color: royalblue;
+}
+
+.small{
+    font-size: 15px;
+}
+.normal{
+    font-size: 25px;
+}
+.big{
+    font-size: 35px;
+}
+.blue{
+    filter: invert(0.5) sepia(1)  saturate(10) hue-rotate(180deg); 
+  }
+  
+.turqoise{
+  filter: invert(56%) sepia(82%) saturate(376%) hue-rotate(125deg) brightness(83%) contrast(90%);
+}
+  
+.orange{
+  filter: invert(68%) sepia(81%) saturate(4119%) hue-rotate(3deg) brightness(104%) contrast(106%);
+}

@@ -1,0 +1,59 @@
+dl{
+    font-size: 25px;
+    border: dashed orange 3px;
+    padding: 30px;
+}
+
+dt{
+    font-weight: bold;
+    border: firebrick 3px solid;
+    border-radius: 15px;
+    background-color: lemonchiffon;
+    padding: 5px;
+}
+
+dd{
+    font-size: 0.7em;
+}
+
+dd:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#click{
+    background-color: red;
+    color: white;
+    padding: 15px 10px;
+    border-radius: 5px;
+    font-size: 30px;
+    width: fit-content;
+
+    user-select: none; /*버튼안에 글자드래그안되게*/
+
+    border: outset gray 5px;
+}
+
+#click:active{
+    border-style: inset;
+}
+label {
+    display: block;
+    margin: 1px;
+    padding: 1px;
+  }
+  
+  .field {
+    margin: 1px;
+    padding: 1px;
+  }
+  
+  input:required {
+    border-color: red;
+    border-width: 3px;
+  }
+  
+  input:required:invalid {
+    border-color: blue;
+  }
